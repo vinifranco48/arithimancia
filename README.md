@@ -1,5 +1,4 @@
-Arithimancia
-Sobre o Projeto
+
 Arithimancia é um RPG de texto com o intuito de ajudar jovens estudantes a estudar matemática, trabalhando os conceitos elementares de maneira divertida e intuitiva. A ideia é trazer uma nova percepção sobre a matemática como uma linguagem utilizada para explicar o mundo como um todo.
 Com esse intuito nasce Arithimancia, inspirado em D&D (Dungeons & Dragons).
 Objetivo Educacional
