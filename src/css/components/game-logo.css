@@ -1,0 +1,18 @@
+.game-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.game-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--btn-gradient);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+}

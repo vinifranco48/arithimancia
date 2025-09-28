@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithimancia - Gameplay</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/pages/game.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="character-info">
+            <div class="character-icon" id="character-icon">📐</div>
+            <div class="character-name" id="character-name">Jogador</div>
+            <div class="character-class" id="character-class">Os Algebristas</div>
+            <div class="character-status">Iniciante</div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-label">PP:</span>
+                <span class="stat-value" id="pp-value">100</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Axiomas:</span>
+                <span class="stat-value" id="axiomas-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Teoremas:</span>
+                <span class="stat-value" id="teoremas-value">0</span>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="game-controls">
+            <button class="control-btn" onclick="showInventory()">
+                <span>🎒</span> Inventário
+            </button>
+            <button class="control-btn" onclick="showMap()">
+                <span>🗺️</span> Mapa
+            </button>
+            <button class="control-btn" onclick="saveGame()">
+                <span>💾</span> Salvar
+            </button>
+            <button class="control-btn" onclick="goToMenu()">
+                <span>🏠</span> Menu
+            </button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="welcome-header">
+            <span class="welcome-icon">🌟</span>
+            <h1 class="welcome-title" id="welcome-title">Bem-vindo a Arithimancia</h1>
+        </div>
+
+        <div class="story-text" id="story-text">
+            Carregando sua aventura...
+        </div>
+
+        <div class="mission-section" id="mission-section">
+            <div class="mission-title">Sua missão:</div>
+            <div class="mission-text">Reconstruir a Grande Rede Matemática e restaurar a ordem em Arithimancia.</div>
+        </div>
+
+        <div class="question-section" id="question-section">
+            <div class="question-text" id="question-text">Onde você gostaria de começar sua jornada?</div>
+
+            <div class="choices-grid" id="choices-grid">
+                <!-- Choices will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/game.js"></script>
+</body>
+</html>

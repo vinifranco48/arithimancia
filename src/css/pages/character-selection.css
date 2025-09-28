@@ -1,0 +1,191 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.name-input-section {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.name-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(168, 85, 247, 0.3);
+    border-radius: var(--border-radius-sm);
+    padding: 12px var(--spacing-md);
+    color: var(--text-primary);
+    font-size: var(--font-size-sm);
+    width: 300px;
+    max-width: 100%;
+    outline: none;
+    transition: all var(--transition-normal);
+}
+
+.name-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.name-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+}
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: var(--spacing-xl);
+}
+
+.character-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(168, 85, 247, 0.2);
+    border-radius: var(--spacing-sm);
+    padding: 25px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.character-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.character-card.selected {
+    border-color: var(--primary-color);
+    background: rgba(168, 85, 247, 0.1);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.character-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--quaternary-color), #6d28d9);
+    border-radius: var(--spacing-sm);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.character-card.selected::before {
+    opacity: 1;
+}
+
+.character-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.character-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--btn-gradient);
+    border-radius: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-lg);
+}
+
+.character-info h3 {
+    font-size: var(--spacing-md);
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.character-subtitle {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.character-description {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.character-powers {
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--spacing-sm);
+    border-radius: var(--spacing-xs);
+}
+
+.powers-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.powers-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(168, 85, 247, 0.3);
+    color: var(--text-primary);
+    padding: 12px 25px;
+    border-radius: var(--spacing-xs);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-normal);
+}
+
+.back-btn:hover {
+    background: rgba(168, 85, 247, 0.2);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.start-btn {
+    background: var(--btn-gradient);
+    border: none;
+    color: var(--text-primary);
+    padding: 15px 35px;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    transition: all var(--transition-normal);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.start-btn.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.start-btn.active:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+}

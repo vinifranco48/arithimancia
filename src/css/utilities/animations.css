@@ -1,0 +1,51 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-content > * {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.main-content > *:nth-child(1) { animation-delay: 0.1s; }
+.main-content > *:nth-child(2) { animation-delay: 0.2s; }
+.main-content > *:nth-child(3) { animation-delay: 0.3s; }
+
+.menu-btn:nth-child(1) { animation-delay: 0.4s; }
+.menu-btn:nth-child(2) { animation-delay: 0.5s; }
+.menu-btn:nth-child(3) { animation-delay: 0.6s; }
+
+/* Character Selection Animations */
+.character-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.character-card:nth-child(1) { animation-delay: 0.1s; }
+.character-card:nth-child(2) { animation-delay: 0.2s; }
+.character-card:nth-child(3) { animation-delay: 0.3s; }
+.character-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Game Page Animations */
+.choice-button {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.choice-button:nth-child(1) { animation-delay: 0.1s; }
+.choice-button:nth-child(2) { animation-delay: 0.2s; }
+.choice-button:nth-child(3) { animation-delay: 0.3s; }
+.choice-button:nth-child(4) { animation-delay: 0.4s; }
+
+.story-text {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.mission-section {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}

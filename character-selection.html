@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithimancia - Seleção de Personagem</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/pages/character-selection.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Nome do Personagem:</h1>
+
+        <div class="name-input-section">
+            <input type="text" class="name-input" placeholder="Digite seu nome..." maxlength="30">
+        </div>
+
+        <div class="characters-grid">
+            <div class="character-card" data-character="algebristas">
+                <div class="character-header">
+                    <div class="character-icon">📐</div>
+                    <div class="character-info">
+                        <h3>🎓 Os Algebristas</h3>
+                        <div class="character-subtitle">"Reino Construído da Disciplina"</div>
+                    </div>
+                </div>
+                <div class="character-description">
+                    Mestres das equações e sistemas lineares. Acreditam que a ordem surge da resolução metódica.
+                </div>
+                <div class="character-powers">
+                    <div class="powers-title">Poderes:</div>
+                    <div class="powers-text">Manipulação de Variáveis, Sistema Linear, Equações</div>
+                </div>
+            </div>
+
+            <div class="character-card selected" data-character="geometras">
+                <div class="character-header">
+                    <div class="character-icon">📏</div>
+                    <div class="character-info">
+                        <h3>🌐 Os Geômetras</h3>
+                        <div class="character-subtitle">"Reino Harmonioso das Formas"</div>
+                    </div>
+                </div>
+                <div class="character-description">
+                    Especialistas em espaço e estruturas. Reconhecem a realidade formal por forma.
+                </div>
+                <div class="character-powers">
+                    <div class="powers-title">Poderes:</div>
+                    <div class="powers-text">Controlo de Espaço, Portal, Construção, Desconstrução</div>
+                </div>
+            </div>
+
+            <div class="character-card" data-character="trigonometras">
+                <div class="character-header">
+                    <div class="character-icon">📊</div>
+                    <div class="character-info">
+                        <h3>🌊 Os Trigonômetras</h3>
+                        <div class="character-subtitle">"Reino Cíclico Eterno"</div>
+                    </div>
+                </div>
+                <div class="character-description">
+                    Guardiões dos padrões cíclicos. Conhecem ondas e frequências cósmicas.
+                </div>
+                <div class="character-powers">
+                    <div class="powers-title">Poderes:</div>
+                    <div class="powers-text">Controlo de Ondas, Sincronização, Previsão Cíclica</div>
+                </div>
+            </div>
+
+            <div class="character-card" data-character="numerologos">
+                <div class="character-header">
+                    <div class="character-icon">🔢</div>
+                    <div class="character-info">
+                        <h3>🌟 Os Numerólogos</h3>
+                        <div class="character-subtitle">"Reino Sagrados dos Números Puros"</div>
+                    </div>
+                </div>
+                <div class="character-description">
+                    Místicos dos números. Cada número possui essência e poder único.
+                </div>
+                <div class="character-powers">
+                    <div class="powers-title">Poderes:</div>
+                    <div class="powers-text">Invocação Numérica, Decifrção de Padrões, Estimação</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <button class="back-btn" onclick="goBack()">Voltar</button>
+            <button class="start-btn active" onclick="startGame()">Iniciar Aventura</button>
+        </div>
+    </div>
+
+    <script src="src/js/character-selection.js"></script>
+</body>
+</html>
